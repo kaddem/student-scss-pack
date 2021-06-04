@@ -5,10 +5,22 @@
 
 ## Требования
 
-Для работы необходимы
+Для работы:
 
-* [Node.js](http://nodejs.org) - ставь LTS версию.
-* [Gulp](http://gulpjs.com/): `[sudo] npm install -g gulp`
+1. Проверь что у тебя стоят ```node.js``` и пакетный менеджер ```npm```. Введи по череди команды:
+```bash
+node -v
+```
+```bash
+npm -v
+```
+Если в ответ получил номера версий - все хорошо. Переходи сразу к пункту 3. Если нет - к следующему 2 пункту.
+
+2. [Node.js](http://nodejs.org) - скачай и установи LTS версию.
+3. Установи [Gulp CLI](https://gulpjs.com/docs/en/getting-started/quick-start/) - введи в терминале:
+```bash
+[sudo] npm install --global gulp-cli
+```
 
 ## Начало работы
 
