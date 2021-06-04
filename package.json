@@ -1,0 +1,21 @@
+{
+  "name": "student-scss-pack",
+  "version": "1.0.0",
+  "description": "Стартовый репозиторий для студентов",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Kirill Demidov <kademidov@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-cssbeautify": "^3.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-sass": "^4.14.1"
+  }
+}
