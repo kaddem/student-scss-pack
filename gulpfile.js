@@ -1,12 +1,8 @@
 'use strict';
 
 const { series, parallel, src, dest, watch } = require('gulp');
-const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
-// const postcss = require('gulp-postcss');
-// const mqpacker = require('css-mqpacker');
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
-const cssbeautify = require('gulp-cssbeautify');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
 
@@ -22,7 +18,8 @@ const path = {
     watch: {
         srcStyle   : 'src/styles/**/*.scss',
         buildStyle : 'www/style/*.css',
-        html       : 'www/*.html'
+        html       : 'www/*.html',
+        js         : 'www/scripts/**/*.js'
     }
 }
 
@@ -38,9 +35,6 @@ function styles() {
                 title  : '<%= error.plugin %>'
             }))
         )
-        .pipe(cssbeautify({
-          indent: '  ',
-        }))
         .pipe(sourcemaps.write())
         .pipe(dest(path.www.style));
 }
@@ -57,8 +51,13 @@ function serve() {
 
     watch([
         path.watch.html,
-        path.watch.buildStyle
-    ]).on('change', browserSync.reload);
+        path.watch.buildStyle,
+        path.watch.js,
+    ]).on('change', reload);
+}
+
+function reload() {
+    browserSync.reload();
 }
 
 exports.default = series(

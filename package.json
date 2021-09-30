@@ -11,11 +11,10 @@
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
-    "gulp-cssbeautify": "^3.0.0",
     "gulp-notify": "^4.0.0",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "sass": "^1.42.1"
   }
 }
