@@ -9,12 +9,12 @@
   "author": "Kirill Demidov <kademidov@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.5",
+    "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-notify": "^4.0.0",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "node-sass": "^4.14.1",
-    "sass": "^1.42.1"
+    "node-sass": "^7.0.1",
+    "sass": "^1.46.0"
   }
 }
