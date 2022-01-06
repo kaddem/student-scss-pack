@@ -1,7 +1,7 @@
 # student-startpack
 Простой сборщик на scss для студентов
 
-**Version 1.0.2**
+**Version 1.1.0**
 
 ## Требования
 
